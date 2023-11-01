@@ -12,12 +12,11 @@
 
 - **Intel i3 10105F**
 
-![CPU](https://raw.githubusercontent.com/ruanyouxing/MacEFI/main/images/cpu.png =x150)
+ <img src="./images/cpu.png" width=150>
 
 - **AMD Sapphire RX 5600 XT ( Navi 10 )**  
   \
-  ![GPU](https://raw.githubusercontent.com/ruanyouxing/MacEFI/main/images/vga.png =x150)
-
+ <img src="./images/vga.png" width=350>
 - **MSI H510M-A PRO**
   - **m-ATX size**
   - **Audio: Realtek® ALC892/ ALC897 Codec**
@@ -31,14 +30,12 @@
   - **4 SATA Slots**
 
 \
-![Mainboard](https://raw.githubusercontent.com/ruanyouxing/MacEFI/main/images/mainboard.png =x250)
-
+ <img src="./images/mainboard.png" width=300>
 - **2x Kingston Fury Beast 8GB (3200MHz but only runs at 2666MHz 💔)**  
-  ![RAM](https://raw.githubusercontent.com/ruanyouxing/MacEFI/main/images/ram.png =x120)
-
+  \
+ <img src="./images/ram.png" width=300>
 - **Intel WiFi-6 AX 200**  
-  ![WiFi](https://raw.githubusercontent.com/ruanyouxing/MacEFI/main/images/wifi_card.png =x220)
-
+ <img src="./images/wifi_card.png" width=240>
 ## UEFI Settings
 
 ### Disabled
@@ -149,4 +146,4 @@
 ### _images_
 Well the named told it all, it just contains images for this markdown : )
 
-#### Also thanks @HighDelay a lot for helping me build this EFI and fixing errors!
+#### Also thanks [@HighDelay](https://github.com/HighDelay) a lot for helping me build this EFI and fixing errors!
