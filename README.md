@@ -12,11 +12,11 @@
 
 - **Intel i3 10105F**
 
-![CPU](./images/cpu.png =x150)
+![CPU](https://raw.githubusercontent.com/ruanyouxing/MacEFI/main/images/cpu.png =x150)
 
 - **AMD Sapphire RX 5600 XT ( Navi 10 )**  
   \
-  ![GPU](./images/vga.png =x150)
+  ![GPU](https://raw.githubusercontent.com/ruanyouxing/MacEFI/main/images/vga.png =x150)
 
 - **MSI H510M-A PRO**
   - **m-ATX size**
@@ -31,14 +31,13 @@
   - **4 SATA Slots**
 
 \
-![Mainboard](./images/mainboard.png =x250)
+![Mainboard](https://raw.githubusercontent.com/ruanyouxing/MacEFI/main/images/mainboard.png =x250)
 
 - **2x Kingston Fury Beast 8GB (3200MHz but only runs at 2666MHz 💔)**  
-  \
-  ![RAM](./images/ram.png =x120)
+  ![RAM](https://raw.githubusercontent.com/ruanyouxing/MacEFI/main/images/ram.png =x120)
 
 - **Intel WiFi-6 AX 200**  
-  ![WiFi](./images/wifi_card.png =x220)
+  ![WiFi](https://raw.githubusercontent.com/ruanyouxing/MacEFI/main/images/wifi_card.png =x220)
 
 ## UEFI Settings
 
