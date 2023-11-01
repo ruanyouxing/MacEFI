@@ -15,9 +15,11 @@
  <img src="./images/cpu.png" width=150>
 
 - **AMD Sapphire RX 5600 XT ( Navi 10 )**  
-  \
+
  <img src="./images/vga.png" width=350>
+
 - **MSI H510M-A PRO**
+
   - **m-ATX size**
   - **Audio: Realtek® ALC892/ ALC897 Codec**
   - **Socket: LGA 1200 (for Intel 10th and 11th Generation)**
@@ -29,13 +31,16 @@
     lol )**
   - **4 SATA Slots**
 
-\
- <img src="./images/mainboard.png" width=300>
+ <img src="./images/mainboard.png" width=270>  
+
+
 - **2x Kingston Fury Beast 8GB (3200MHz but only runs at 2666MHz 💔)**  
-  \
- <img src="./images/ram.png" width=300>
+
+ <img src="./images/ram.png" width=300>  
+
 - **Intel WiFi-6 AX 200**  
- <img src="./images/wifi_card.png" width=240>
+ <img src="./images/wifi_card.png" width=240>  
+
 ## UEFI Settings
 
 ### Disabled
