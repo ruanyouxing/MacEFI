@@ -141,7 +141,7 @@
 - _Tools/_: OpenCore tools, already inside `OpenCorePkg` package
 - _config.plist_: OpenCore configuration file
     - SMBIOS: **iMac 20,1**
-    - Secure Boot Model: **j187f**
+    - Secure Boot Model: **j185**
 - _OpenCore.efi_: OpenCore EFI binary boot file
 ### _secure_boot_certs_
 - Generated secure boot files: `db.auth` `KEK.auth` and `PK.auth`
