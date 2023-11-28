@@ -1,3 +1,4 @@
 BOOT/vars/PreviousBoot
+BOOT/btrfs-snapshot-stanzas
+BOOT/btrfs-snapshot-stanzas/arch_vmlinuz-linux-zen.conf
 Microsoft
-grub/grub.cfg
