@@ -77,34 +77,36 @@
         };
       };
 
-      boot.loader.efi.canTouchEfiVariables = lib.mkForce true;
-      boot.loader.grub.efiInstallAsRemovable = lib.mkForce false;
+      config = {
+        boot.loader.efi.canTouchEfiVariables = lib.mkForce true;
+        boot.loader.grub.efiInstallAsRemovable = lib.mkForce false;
 
-      environment.systemPackages = with pkgs; [
-        efibootmgr
-        macefiSyncScript
-        macefiBootEntryScript
-      ];
+        environment.systemPackages = with pkgs; [
+          efibootmgr
+          macefiSyncScript
+          macefiBootEntryScript
+        ];
 
-      systemd.services.macefi-sync = {
-        description =
-          "Sync MacEFI files to EFI partition (run manually with: systemctl start macefi-sync)";
-        serviceConfig = {
-          Type = "oneshot";
-          ExecStart = "${macefiSyncScript}/bin/macefi-sync";
-          RemainAfterExit = true;
+        systemd.services.macefi-sync = {
+          description =
+            "Sync MacEFI files to EFI partition (run manually with: systemctl start macefi-sync)";
+          serviceConfig = {
+            Type = "oneshot";
+            ExecStart = "${macefiSyncScript}/bin/macefi-sync";
+            RemainAfterExit = true;
+          };
         };
-      };
 
-      systemd.services.macefi-boot-entry = {
-        description =
-          "Create and prioritize MacEFI rEFInd boot entry (run manually with: systemctl start macefi-boot-entry)";
-        requires = ["macefi-sync.service"];
-        after = ["macefi-sync.service"];
-        serviceConfig = {
-          Type = "oneshot";
-          ExecStart = "${macefiBootEntryScript}/bin/macefi-boot-entry";
-          RemainAfterExit = true;
+        systemd.services.macefi-boot-entry = {
+          description =
+            "Create and prioritize MacEFI rEFInd boot entry (run manually with: systemctl start macefi-boot-entry)";
+          requires = ["macefi-sync.service"];
+          after = ["macefi-sync.service"];
+          serviceConfig = {
+            Type = "oneshot";
+            ExecStart = "${macefiBootEntryScript}/bin/macefi-boot-entry";
+            RemainAfterExit = true;
+          };
         };
       };
     };
