@@ -22,5 +22,8 @@ if [ -d "$MACEFI_PKG/tools" ]; then
   cp -rf "$MACEFI_PKG/tools"/* "$EFI_MOUNT/EFI/tools/" 2>/dev/null || true
 fi
 
+echo "Writing Catppuccin rEFInd theme config..."
+cp "$CATPPUCCIN_THEME_CONF" "$EFI_MOUNT/EFI/BOOT/themes/catppuccin/theme.conf"
+
 echo "MacEFI files synced successfully."
 exit 0
