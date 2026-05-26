@@ -24,6 +24,9 @@
         cp -r $src/OC $out/
         [ -d "$src/tools" ] && cp -r $src/tools $out/ || true
 
+        # Ensure writable — cp -r from the Nix store preserves read-only
+        chmod -R u+w $out/BOOT
+
         # Add Catppuccin rEFInd theme (all flavors)
         mkdir -p $out/BOOT/themes/catppuccin
         cp -r ${theme}/assets $out/BOOT/themes/catppuccin/assets/
